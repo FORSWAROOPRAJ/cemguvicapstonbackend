@@ -12,7 +12,7 @@ const port = process.env.PORT || 5000;
 
 connectDB();
 
-app.use(cors({ credentials: true, origin: 'http://localhost:3000' }));
+app.use(cors({ credentials: true, origin: 'https://crm-guvi-capston.netlify.app' }));
 app.use(express.json());
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: false }));
