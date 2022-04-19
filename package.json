@@ -4,6 +4,7 @@
   "description": "",
   
   "scripts": {
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION= false npm install --prefix frontend && npm run build",
     "start": "node src/server.js",
     "server": "nodemon src/server.js"
   },

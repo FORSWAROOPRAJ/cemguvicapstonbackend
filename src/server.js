@@ -25,6 +25,10 @@ app.use('/api/tasks', require('./routes/tasks'));
 app.use(notFoundURL);
 app.use(catchErrors);
 
+if(process.env.NODE_ENV = "production"){
+  app.use(express.static(__dirname, '../frontend','build','index1.html'))
+}
+
 app.listen(port, () => {
   console.log(`Server is running on PORT: ${port}`);
 });
